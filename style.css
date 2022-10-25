@@ -1,0 +1,130 @@
+body {
+    margin: 10px;
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url(https://images.unsplash.com/photo-1625068786411-4e7fe1f6191c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size:cover;
+}
+
+h1 {
+    font-size: 60px;
+    color: maroon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0.3);
+    text-align: center;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+    background-color: rgb(232, 9, 46);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 30px;
+    color: maroon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.catfactsbtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(232, 9, 46);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+
+.about {
+    font-size: medium;
+}
+
+.btn:hover {
+    filter: brightness(0.8);
+}
+
+.active.container {
+    filter:blur(5px) brightness(.7);
+}
+
+.popup-container {
+    position:fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: url(https://images.unsplash.com/photo-1581374509790-d3bb141e1e5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px (0,0,0,0.3);
+    opacity: 1;
+    transition: all .7s;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 10px 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: palevioletred
+}
+
+label {
+    color: rgb(216, 112, 147);
+    font-family: sans-serif ;
+}
+
+.popup-btn {
+    background-color: palevioletred;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.input::placeholder{
+    color: lightpink;
+}
+
+.close-icon {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: palevioletred;
+}
+
+.active.popup-container {
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
+
